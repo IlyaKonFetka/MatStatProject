@@ -394,49 +394,98 @@ $$F1 = 2 \cdot \frac{precision \cdot recall}{precision + recall}$$
 
 \section{Графики и визуализации}
 
-\subsection{Корреляционные матрицы}
+\subsection{Корреляционные матрицы датасетов}
+
+Корреляционные матрицы показывают взаимосвязи между числовыми признаками в каждом датасете.
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}{0.45\textwidth}
-    \includegraphics[width=\textwidth]{images/correlation_heatmap_insurance.png}
-    \caption{Insurance Dataset}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.45\textwidth}
-    \includegraphics[width=\textwidth]{images/correlation_heatmap_heart.png}
-    \caption{Heart Disease Dataset}
-\end{subfigure}
-\caption{Корреляционные матрицы для датасетов}
+\includegraphics[width=0.7\textwidth]{images/correlation_heatmap_insurance.png}
+\caption{Корреляционная матрица — Insurance Dataset}
 \end{figure}
 
-\subsection{ROC-кривые для задач классификации}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/correlation_heatmap_heart.png}
+\caption{Корреляционная матрица — Heart Disease Dataset}
+\end{figure}
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}{0.3\textwidth}
-    \includegraphics[width=\textwidth]{images/roc_curve_titanic_logistic.png}
-    \caption{Titanic - Logistic}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.3\textwidth}
-    \includegraphics[width=\textwidth]{images/roc_curve_heart_logistic.png}
-    \caption{Heart - Logistic}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.3\textwidth}
-    \includegraphics[width=\textwidth]{images/roc_curve_winequality_binary_svc.png}
-    \caption{Wine - SVC}
-\end{subfigure}
-\caption{ROC-кривые для различных моделей классификации}
+\includegraphics[width=0.7\textwidth]{images/correlation_heatmap_winequality.png}
+\caption{Корреляционная матрица — Wine Quality Dataset}
+\end{figure}
+
+\subsection{Распределения целевых переменных}
+
+Распределения целевых переменных показывают характер задач для каждого датасета.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/target_distribution_insurance.png}
+\caption{Распределение стоимости страховки (Insurance)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/target_distribution_titanic.png}
+\caption{Распределение выживаемости (Titanic)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/target_distribution_winequality.png}
+\caption{Распределение качества вина (Wine Quality)}
+\end{figure}
+
+\subsection{Примеры гистограмм признаков}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/hist_insurance_age.png}
+\caption{Распределение возраста — Insurance Dataset}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/hist_heart_age.png}
+\caption{Распределение возраста — Heart Disease Dataset}
+\end{figure}
+
+\subsection{ROC-кривые для моделей классификации}
+
+ROC-кривые демонстрируют качество классификации для разных методов.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/roc_curve_titanic_logistic.png}
+\caption{ROC-кривая — Titanic Dataset (Logistic Regression)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/roc_curve_titanic_svc.png}
+\caption{ROC-кривая — Titanic Dataset (SVC)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/roc_curve_heart_logistic.png}
+\caption{ROC-кривая — Heart Disease Dataset (Logistic Regression)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{images/roc_curve_heart_svc.png}
+\caption{ROC-кривая — Heart Disease Dataset (SVC)}
 \end{figure}
 
 \subsection{Сравнение производительности моделей}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{images/model_comparison.png}
-\caption{Сравнение моделей по основным метрикам}
+\includegraphics[width=0.9\textwidth]{images/model_comparison.png}
+\caption{Сравнение моделей по основным метрикам качества}
 \end{figure}
 
 \section{Обсуждение результатов и выводы}
